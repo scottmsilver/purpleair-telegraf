@@ -1,3 +1,4 @@
+# This is stolen from https://pypi.org/project/influx-line-protocol/
 class Metric(object):
 
     def __init__(self, measurement):
