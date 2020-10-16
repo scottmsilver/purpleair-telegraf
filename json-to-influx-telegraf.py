@@ -7,6 +7,12 @@ from enum import Enum
 
 # Usage: purpleair-telegraf.py URL_TO_PURPLE_AIR
 
+# Script that
+#
+# 1. Grabs the data from a PurpleAir
+# 2. Parses it.
+# 3. Outputs data in Influx Line format
+
 # Download the JSON document.
 monitorUrl = sys.argv[1]
 rawContents = urllib.request.urlopen(monitorUrl).read()
