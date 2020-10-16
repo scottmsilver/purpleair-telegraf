@@ -117,8 +117,7 @@ FIELD_CONFIG = {
   'p_0_3_um_b': FieldType.VALUE
 }
   
-# Uses pip3 install influx_line_protocol to build a metric
-# Build the metric.
+# Build the metric and output it according to the definitions above.
 metric = Metric("purpleair")
 
 for key in data:
