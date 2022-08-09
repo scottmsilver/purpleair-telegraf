@@ -1,13 +1,16 @@
 # purpleair-telegraf
-purple-air scripts for outputting telegraf metrics
+purple-air scripts for outputting telegraf metrics (in the line protocol format)
 
 Want to connect your Purple Air to influx/grafana/etc?
 
-This script can be used with telegraf to output data to influx.
+This script can be used with telegraf to gather data from your purple air. It outputs
+in the line protocol format. Then you can use telegraf to redirect the output wherever you like
+
 Add this to your telegraf config (be sure to update the 
 
 ```
-# # Read metrics from one or more commands that can output to stdout
+# # Read metrics from one or more commands that can output to stdout (I am outputing to influx here)
+
 [[inputs.exec]]
    ## Commands array
    commands = [
