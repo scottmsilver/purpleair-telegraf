@@ -2,7 +2,7 @@
 import urllib.request
 import sys
 import json
-from metric import Metric
+from influx_line_protocol import Metric
 from enum import Enum
 
 # Usage: purpleair-telegraf.py URL_TO_PURPLE_AIR
